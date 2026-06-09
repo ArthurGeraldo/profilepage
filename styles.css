@@ -6,7 +6,7 @@ body{
     flex-direction: column;
     gap: 50px;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Amatic SC", sans-serif;
 
     background: #EAF1EE;
     background: linear-gradient(180deg,rgba(234, 241, 238, 1) 0%, rgba(192, 237, 255, 1) 56%, rgba(223, 148, 155, 1) 100%);}
@@ -14,24 +14,79 @@ body{
     h1{
         margin-right: 50px;
         text-align: end;
+        color: aliceblue;
+
+        filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.2));
     }
 /*PERFIL*/
     #photo{
         width: min(180px, 40%);
         border: 1px solid aliceblue;
         border-radius: 50%;
+        box-shadow: 0px 5px 15px rgba(223, 148, 155,0.3);
     }
+        /*ALBUM COVER*/
+        .music { /*DIV PRINCIPAL DO ALBUM*/
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* centraliza capa, nome e artista */
+
+            border: 0.5px solid aliceblue;
+
+            background: linear-gradient(180deg,rgba(192, 237, 255, 0.2) 0%,rgba(223, 148, 155, 0.1) 100%);/*Pro backdropfilter funcionar tem q ser um background semitransparente*/
+            box-shadow: 10px 10px 50px rgba(223, 148, 155,0.1);
+
+            border-radius: 25px;
+            padding: 25px;
+            transition: transform 0.3s ease; /*Animação de transição mais suave pra aumentar o tamanho*/
+        }
+        .music:hover {
+            transform: scale(1.1); /*Faz aumentar o tamanho*/
+
+        }
+        #albumcover {
+
+            width: 120px;
+            border-radius: 12.5px;
+        }
+
+        h4{
+            text-align: center;
+            color: aliceblue;
+            filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.2));
+            font-size: 20px;
+        }
+        #artist{
+            text-align: center;
+            color: aliceblue;
+            filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.2));
+            font-size: 15px;
+        }
+    .profile-image {
+             display: flex;
+             flex-direction: column;
+             align-items: flex-start;
+         }
     .profile{
         margin-left: 50px;
         padding: 30px;
         width: 100%;
         max-width: 500px;
 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
         border: 1px solid aliceblue;
         border-radius: 12.5%; /*Arredonda as bordas*/
         background: linear-gradient(180deg,rgba(192, 237, 255, 0.2) 0%,rgba(223, 148, 155, 0.1) 100%);/*Pro backdropfilter funcionar tem q ser um background semitransparente*/
         backdrop-filter: blur(10px); /*Efeito de blur no background pra ficar tipo um vidro*/
         color: aliceblue; /*COR DAS LETRAS*/
+    }
+    h3{
+        filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.2));
+
     }
     /*ANIMAÇÃO*/
         .profile {
@@ -45,4 +100,5 @@ body{
     .city{
         text-align: center;
         align-content: baseline;
+        color: aliceblue;
     }

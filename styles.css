@@ -1,0 +1,48 @@
+body{
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #EAF1EE;
+    background: linear-gradient(180deg,rgba(234, 241, 238, 1) 0%, rgba(192, 237, 255, 1) 56%, rgba(223, 148, 155, 1) 100%);}
+/*H1*/
+    h1{
+        margin-right: 50px;
+        text-align: end;
+    }
+/*PERFIL*/
+    #photo{
+        width: min(180px, 40%);
+        border: 1px solid aliceblue;
+        border-radius: 50%;
+    }
+    .profile{
+        margin-left: 50px;
+        padding: 30px;
+        width: 100%;
+        max-width: 500px;
+
+        border: 1px solid aliceblue;
+        border-radius: 12.5%; /*Arredonda as bordas*/
+        background: linear-gradient(180deg,rgba(192, 237, 255, 0.2) 0%,rgba(223, 148, 155, 0.1) 100%);/*Pro backdropfilter funcionar tem q ser um background semitransparente*/
+        backdrop-filter: blur(10px); /*Efeito de blur no background pra ficar tipo um vidro*/
+        color: aliceblue; /*COR DAS LETRAS*/
+    }
+    /*ANIMAÇÃO*/
+        .profile {
+            transition: transform 0.3s ease; /*Animação de transição mais suave pra aumentar o tamanho*/
+        }
+
+        .profile:hover {
+            transform: scale(1.1); /*Faz aumentar o tamanho*/
+        }
+/*CIDADE*/
+    .city{
+        text-align: center;
+        align-content: baseline;
+    }

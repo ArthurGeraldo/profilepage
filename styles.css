@@ -13,8 +13,9 @@ body{
 /*H1*/
     h1{
         margin-right: 50px;
-        text-align: end;
+        text-align: center;
         color: aliceblue;
+
 
         filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.2));
     }
@@ -45,16 +46,18 @@ body{
 
         }
         #albumcover {
+            box-shadow: 10px 10px 50px rgba(223, 148, 155,0.1);
 
             width: 120px;
             border-radius: 12.5px;
         }
 
         h4{
-            text-align: center;
+
+            text-align: justify-all;
             color: aliceblue;
             filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.2));
-            font-size: 20px;
+            font-size: 12px;
         }
         #artist{
             text-align: center;
@@ -86,7 +89,7 @@ body{
     }
     h3{
         filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.2));
-
+        text-align: left;
     }
     /*ANIMAÇÃO*/
         .profile {
@@ -98,7 +101,8 @@ body{
         }
 /*CIDADE*/
     .city{
-        text-align: center;
-        align-content: baseline;
-        color: aliceblue;
+        text-align: center; /*alinha no centro*/
+        align-content: baseline; /*coloca na parte de baixo da pagina*/
+        color: aliceblue; /*cor da letra*/
+        filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.2)); /*sombra na letra*/
     }
